@@ -1,4 +1,4 @@
-angular.module('app').service('mainSrvc', function($http) {
+angular.module('giphyApp').service('mainSrvc', function($http) {
 this.getImages = function(){
     return $http({
         method: 'GET',
