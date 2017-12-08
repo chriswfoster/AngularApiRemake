@@ -95,26 +95,6 @@
    
   
   
-  .searchBox{
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.651);
-      color: rgb(255, 255, 255);
-      font-size: 21px;
-      font-weight: bold;
-      line-height: 1.3em;
-      border: 2px dashed rgb(255, 255, 255);
-      border-radius: 10px;
-      box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.658), 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-      font-weight: normal;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
-      align-content: center;
-      width: 250px;
-      margin-top: 15px;
-  }
   input[type=text], textarea {
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
@@ -216,7 +196,7 @@
   align-items: baseline;
   align-content: stretch;
   border-bottom-style: outset;
-  height: 20%;
+  height: 10vh;
   width: 100%;
 
   background-color: black;
@@ -238,7 +218,7 @@
   font-size: 20px;
   color: black;
   background-color: rgb(72, 0, 255);
-  margin:30px;
+  margin:10px;
 }
 .top-left-button:hover{
 background-image: url("./iconsBG.gif");
@@ -247,4 +227,32 @@ animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 transform: translate3d(0, 0, 0);
 backface-visibility: hidden;
 perspective: 1000px;
+}
+
+.searchBox{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.651);
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.3em;
+    border: 2px dashed rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.658), 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 250px;
+    margin-top: 15px;
+}
+
+.middle{
+    position: absolute;
+    top: 500px;
+    float: left;
+    z-index: 22;
 }

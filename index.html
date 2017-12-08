@@ -15,7 +15,7 @@
     <!-- <link rel="stylesheet" href="styles.css"> -->
 
     <!-- VIEW STYLING -->
-    <link rel="stylesheet" href= "app/App.css">
+    <link rel="stylesheet" href="app/App.css">
 </head>
 
 <body>
@@ -34,10 +34,8 @@
     </main>
 
 
-    <div>
-        <div>
-
-        </div>
+    <div class="middle">
+        <div ng-include="'app/search/searchTmpl.html'"></div>
     </div>
 
 
@@ -48,7 +46,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
     <script src="app/app.js"></script>
     <script src="app/search/searchCtrl.js"></script>
-
+    <script src="app/mainSrvc.js"></script>
 
 </body>
 
