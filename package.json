@@ -4,6 +4,7 @@
     "dev": "live-server ./"
   },
   "dependencies": {
+    "build": "^0.1.4",
     "express": "^4.16.2",
     "live-server": "^1.2.0"
   }

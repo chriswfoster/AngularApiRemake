@@ -3,7 +3,7 @@ const { json } = require("body-parser")
 
 const app = express()
 
-app.use(express.static(`${__dirname}/../build`))
+app.use(express.static(`${__dirname}/..`))
 
 const port = 3003
 app.use(json())
