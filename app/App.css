@@ -62,17 +62,6 @@
   }
 }
 
-.giphyButton {
-  background-image: url("./Giphylogo.gif");
-  border-radius: 500px;
-  background-repeat: no-repeat;
-  width: 195px;
-  height: 40px;
-  border-style: outset;
-  border-width: 4px;
-  margin-top: 20px;
-}
-
 input[type="text"],
 textarea {
   -webkit-transition: all 0.3s ease-in-out;
@@ -128,7 +117,7 @@ textarea:focus {
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 30px;
+  width: 60px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -162,15 +151,25 @@ textarea:focus {
   align-items: baseline;
   align-content: stretch;
   border-bottom-style: outset;
-  height: 10vh;
+  height: 15vh;
   width: 100%;
 
   background-color: black;
   box-shadow: 10px 10px 5px #000000;
   background-image: url("./headerpic.jpg");
 }
+.giphyButton {
+  background-image: url("./Giphylogo.gif");
+  border-radius: 500px;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 50px;
+  border-style: outset;
+  border-width: 4px;
+  margin-top: 20%;
+}
 
-.top-left {
+.topLeft {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -178,43 +177,19 @@ textarea:focus {
   align-items: baseline;
   align-content: stretch;
 }
-.top-left-button {
+.topLeftButton {
   padding: 10px;
   border-radius: 500px;
   font-size: 20px;
-  color: black;
-  background-color: rgb(72, 0, 255);
-  margin: 10px;
+  background-color: rgb(255, 0, 0);
 }
-.top-left-button:hover {
+.topLeftButton:hover {
   background-image: url("./iconsBG.gif");
   padding: 30px;
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
-}
-
-.searchBox {
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.651);
-  color: rgb(255, 255, 255);
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1.3em;
-  border: 2px dashed rgb(255, 255, 255);
-  border-radius: 10px;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.658),
-    2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-  font-weight: normal;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  width: 250px;
-  margin-top: 15px;
 }
 
 .middle {
@@ -244,7 +219,7 @@ textarea:focus {
 }
 
 .imageDivider {
-  width: 100vw;
+  width: 95vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -261,4 +236,28 @@ textarea:focus {
   border-color: rgba(255, 255, 255, 0.301);
   box-shadow: 10px 10px 5px #000000;
   max-width: 30vw;
+}
+
+.searchBox {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.651);
+  color: rgb(255, 255, 255);
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.3em;
+  border: 2px dashed rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.658),
+    2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 250px;
+}
+.inputLine {
+  margin-bottom: 7px;
 }
