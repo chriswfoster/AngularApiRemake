@@ -8,12 +8,17 @@
                 <button type='button' ng-click="whatever()" name='button'>Whatevz</button>
 
         </div>
-        <div ng-repeat="pic in allImages" class="imageDivider">
-                <img src=https://i.giphy.com/{{pic.id}}.gif class="imageTile" alt="Search for pics!" />
+        <div class="imageDivider">
+                <div ng-repeat="pic in allImages track by $index" class="imageFlex">
+                        <img ng-show="$index % 2 == 1" src=https://i.giphy.com/{{pic.id}}.gif class="imageTile" alt="Search for pics!" />
+                </div>
+                <div ng-repeat="pic in allImages track by $index" class="imageFlex">
+
+                        <img ng-show="$index % 2 == 0" src=https://i.giphy.com/{{pic.id}}.gif class="imageTile" alt="Search for pics!" />
+
+                </div>
+
+
+
+
         </div>
-
-
-
-
-
-</div>
