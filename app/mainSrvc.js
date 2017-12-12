@@ -1,10 +1,9 @@
 angular.module("giphyApp").service("mainSrvc", function($http) {
-  this.getImages = function(text) {
-    console.log(text)
-    return $http({
-      method: "GET",
-      url:
-        "http://api.giphy.com/v1/gifs/search?q=test&api_key=GZCBaX1kYUSCE1Ni9xqAwfeLkYuWqE66&limit=10"
-    })
+  this.getImages = function(obj) {
+    return $http
+      .get(
+        `http://api.giphy.com/v1/gifs/search?q=${obj}&api_key=GZCBaX1kYUSCE1Ni9xqAwfeLkYuWqE66&limit=10`
+      )
+      .then(response => response)
   }
 })
